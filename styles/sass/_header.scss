@@ -1,0 +1,69 @@
+// general header styles
+
+header {
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-nav ul {
+  display: flex;
+  li {
+    margin-top: 50px;
+  }
+  a {
+    color: #FFF;
+    margin: 20px;
+    padding: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 29px;
+    font-size: 1rem;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    border-bottom: 2.5px solid $primary;
+  }
+}
+
+// index.html header
+
+header.index {
+  background-image: url(../assets/home-header.jpg);
+  h1 {
+    color: $primary;
+    width: 50%;
+    margin-top: 300px;
+  }
+  .header-content {
+    display: flex;
+  }
+}
+
+.header-img {
+  width: 55%;
+  position: absolute;
+  right: 0;
+  bottom: -120px;
+}
+
+// blog.html header
+
+.blog {
+  header {
+    background-image: url(../assets/blog-header.jpg);
+  }
+}
+
+// contact.html header
+
+.contact {
+  header {
+    background-image: url(../assets/contact-header.jpg);
+    height: 70vh;
+  }
+}
+
+

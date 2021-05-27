@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body class= "blog">
+
+  <!-- header starts here -->
+  <header>
+    <div class="wrapper">
+      <nav class="header-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>
+        Blog
+      </h1>
+    </div>
+  </header>
+<!-- header ends here -->
+
+<!-- main starts here -->
+<main>
+  <div class="wrapper">
+    <div class="aside-container">
+  <!-- aside starts here -->
+      <aside>
+        <div class="aside-img">
+          <img src="./assets/blog-side-image.jpg" alt="a sailing boat">
+        </div>
+
+        <div class="aside-text">
+          <div>
+            <h3>Our Mission</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem </p>
+          </div>
+          <div>
+            <h3>Recent Posts</h3>
+            <ul>
+              <li>
+                <a href="#"><p>Donec facilisis tortor ut</p></a>
+              </li>
+              <li>
+                <a href="#"><p>augue lacinia at viverna</p></a>
+              </li>
+              <li>
+                <a href="#"><p>semper sed sapien metus</p></a>
+              </li>
+              <li>
+                <a href="#"><p>Scelerisque nec pharetra id</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+
+  <!-- destination section starts here -->
+    <div class="blog-container">
+    <section class="destination">
+
+      <div class="destination-img">
+        <img src="./assets/blog-post-image.jpg" alt="a yatch anchored with rope">
+      </div>
+
+      <article>
+        <h2>Next Destination</h2>
+
+        <p>Monday<time datetime="2019-10-30"> October 30, 2019</time> by Sulaire</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, aut! Laudantium aperiam eum quae officiis quia excepturi! Vitae quo totam placeat perspiciatis molestias. Nemo commodi optio cumque ducimus saepe consequatur dicta a. Ex, dolorem ducimus?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fuga quasi omnis excepturi deleniti dolore nesciunt architecto odit perferendis, cumque, minima modi eligendi dolorem. Sit voluptates maiores aut nulla ea fugiat sapiente modi, dicta tenetur iusto eaque illum maxime. Repudiandae vel nihil repellat dicta ea illum expedita iure inventore dolorum.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque ducimus dolor, adipisci nobis temporibus possimus fugit non sed quaerat perferendis aspernatur fuga minus delectus cupiditate, ipsum, eligendi incidunt aperiam sapiente tenetur dolorem. Veniam excepturi officia, repudiandae magni deserunt architecto quam reprehenderit, ipsa enim quidem ex est autem voluptatum iure fugiat, voluptates mollitia sapiente libero earum. Doloribus recusandae molestiae ducimus eaque cumque nesciunt, distinctio rem qui quo dolorem alias obcaecati veritatis esse possimus nam quas?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam deserunt qui eligendi explicabo corporis ullam repudiandae! Voluptatum maiores esse labore.</p>
+      </article>
+    </section>
+
+    <section class="comments">
+      <h2>Comments:</h2>
+
+      <div class="comments-container">
+
+        <div class="comments-img">
+          <img src="./assets/comment-1.jpg" alt="a guy">
+        </div>
+        <div class="comments-text">
+          <h4>Tuesday <time datetime="2019-10-09">October 9th, 2019</time> by Ali</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem voluptas explicabo laudantium fuga modi itaque at obcaecati velit dignissimos voluptatum, in deleniti ullam quaerat et voluptate ut cupiditate? Molestias, minus.</p>
+        </div>
+      </div>
+
+      <div class="comments-container">
+
+        <div class="comments-img">
+          <img src="./assets/comment-2.jpg" alt="a smiling lady">
+        </div>
+        <div class="comments-text">
+          <h4>Tuesday <time datetime="2019-10-10">October 10th, 2019</time> by Lisa</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad illum, ratione doloribus dolore placeat voluptates?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- form starts here -->
+
+    <form action="submit">
+      <label for="userName" class="sr-only">User name</label>
+      <input type="text" id="userName" name="userName" placeholder="Name">
+
+      <label for="userEmail" class="sr-only">User Email</label>
+      <input type="email" id="userEmail" name="userEmail" placeholder="Email address">
+
+      <label for="comment" class="sr-only">Comments</label>
+      <textarea name="comment" id="comment" cols="60" rows="10" placeholder="Comment"></textarea>
+
+      <button type="submit">Post Comment</button>
+    </form>
+    </div>
+    
+    <!-- wrapper ends here -->
+  </div>
+</main>
+<!-- main ends here -->
+
+<!-- footer starts here -->
+<footer>
+  <p>Copyright &copy; 2021 Juno College</p>
+</footer>
+<!-- footer ends here -->
+</body>
+</html>
