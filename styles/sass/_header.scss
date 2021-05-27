@@ -7,6 +7,19 @@ header {
   position: relative;
 }
 
+.blog,
+.index,
+.contact {
+  header i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2rem;
+    visibility: hidden;
+    color: #FFF;
+  }
+}
+
 .header-nav ul {
   display: flex;
   li {
@@ -62,7 +75,7 @@ header.index {
 .contact {
   header {
     background-image: url(../assets/contact-header.jpg);
-    height: 70vh;
+    height: 60vh;
   }
 }
 

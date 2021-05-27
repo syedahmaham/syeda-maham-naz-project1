@@ -4,7 +4,14 @@ button {
   text-transform: uppercase;
   width: 100%;
   padding: 7px 0;
-  border: 2px transparent;
+  border: 4px transparent;
+}
+.contact,
+.blog {
+  button:hover,
+  button:focus {
+    color: rgb(37, 145, 218);
+  }
 }
 
 input[type="text"],

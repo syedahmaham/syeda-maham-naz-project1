@@ -291,6 +291,17 @@ header {
   position: relative;
 }
 
+.blog header i,
+.index header i,
+.contact header i {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2rem;
+  visibility: hidden;
+  color: #FFF;
+}
+
 .header-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,7 +352,7 @@ header.index .header-content {
 
 .contact header {
   background-image: url(../assets/contact-header.jpg);
-  height: 70vh;
+  height: 60vh;
 }
 
 h1 {
@@ -530,6 +541,10 @@ h4 {
   margin-left: 30px;
 }
 
+.aside-text li a {
+  font-size: 0.6rem;
+}
+
 .aside-img {
   position: relative;
   top: -30px;
@@ -589,13 +604,6 @@ h4 {
   background-color: #EAFEFC;
   padding: 100px 0;
 }
-.contact i {
-  color: #0D457F;
-}
-.contact i:hover,
-.contact i:focus {
-  text-shadow: 1px 1px 1px grey;
-}
 .contact aside {
   width: 30%;
 }
@@ -604,6 +612,10 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .social-nav ul {
@@ -611,8 +623,15 @@ h4 {
   display: -ms-flexbox;
   display: flex;
 }
-.social-nav ul li {
+.social-nav li {
   padding: 15px 25px 15px 0;
+}
+.social-nav i {
+  color: #0D457F;
+}
+.social-nav i:hover,
+.social-nav i:focus {
+  text-shadow: 1px 1px 1px grey;
 }
 
 address a,
@@ -633,7 +652,14 @@ button {
   text-transform: uppercase;
   width: 100%;
   padding: 7px 0;
-  border: 2px transparent;
+  border: 4px transparent;
+}
+
+.contact button:hover,
+.contact button:focus,
+.blog button:hover,
+.blog button:focus {
+  color: #2591da;
 }
 
 input[type=text],
@@ -720,4 +746,61 @@ footer {
   font-weight: 400;
   padding: 10px;
   color: #0D457F;
+}
+
+@media (max-width: 1000px) {
+  .contact-info .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .social-nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social-nav li {
+    padding: 15px 25px;
+  }
+
+  .contact aside {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact form {
+    position: relative;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  input[type=text],
+input[type=email] {
+    width: 100%;
+  }
+
+  input[type=email] {
+    margin: 15px 0 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .blog header i,
+.index header i,
+.contact header i {
+    visibility: visible;
+  }
+
+  .contact main {
+    padding: 50px 0;
+  }
+
+  .header-nav {
+    visibility: hidden;
+  }
+
+  .contact form {
+    padding: 30px;
+  }
 }
