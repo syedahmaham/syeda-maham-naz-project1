@@ -25,12 +25,14 @@ p {
   margin: 0;
 }
 
-// .social-nav,
-// .header-nav {
+.social-nav,
+.header-nav,
+.about,
+.gallery {
   li {
   list-style: none;
   }
-// }
+}
 
 
 a {
@@ -49,6 +51,11 @@ a {
   font-family: $basefont;
   font-size: 1rem;
   padding: 8px 10px;
+}
+
+.button:hover {
+  background-color: $secondary;
+  color: $primary
 }
 
 p {
@@ -76,19 +83,17 @@ p {
     gap: 40px;
   }
   span {
-    // width: 50px;
-    // height: 50px;
-    // border-radius: 50%;
-    // background-color: $primary;
     margin-right: 15px;
   }
   i {
       color: $secondary;
       font-size: 27px;
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
       border-radius: 50%;
       background-color: $primary;
+      vertical-align: middle;
+      text-align: center;
   }
 }
 
@@ -115,6 +120,10 @@ p {
   .text-container {
     padding: 50px 0;
     width: 80%;
+  }
+  .button:hover {
+    background-color: $tertiary;
+    color: $secondary
   }
 }
 
@@ -233,9 +242,15 @@ p {
   }
 }
 
+// aside styles
+
 .aside-text {
   li a {
-    font-size: 0.6rem;
+    font-size: 1rem;
+    margin-left: 2px;
+  }
+  ul li::before {
+    color: #fff;
   }
 }
 
@@ -267,9 +282,9 @@ p {
 
 // comments section styles
 .comments {
-  padding-top: 25px;
+  margin-left: 70px;
   h2 {
-    margin-left: 40px;;
+    margin-left: 40px;
   }
 }
 

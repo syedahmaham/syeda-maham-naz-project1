@@ -1,4 +1,130 @@
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
+
+  header.index h1 {
+    margin-top: 100px;
+    width: 70%;
+  }
+  .header-img {
+    display: none;
+  }
+
+  .about {
+    padding: 100px 0;
+    ul {
+      grid-template-columns: 90%;
+      margin-left: 20%;
+      p {
+        margin-left: 55px;
+      }
+    }
+  }
+
+  .explore {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .locations,
+  .programs,
+  .locations p {
+    text-align: center;
+  }
+
+  .locations {
+    .img-container {
+      top: 0;
+      margin-left: 20%;
+      width: 60%;
+    }
+    .text-container {
+      padding-left: 0;
+      margin-left: 100px;
+    }
+  }
+
+  .programs {
+    .img-container {
+      bottom: 0;
+      margin-left: 20%;
+      width: 60%;
+    }
+    img {
+      width: 100%;
+      box-shadow: 15px 15px $primary;
+    }
+    .text-container {
+      margin-left: 100px;
+    }
+  }
+
+  .trip {
+    .img-container {
+      display: none;
+    }
+    .text-container {
+      width: 100%;
+      text-align: center;
+      p {
+        text-align: start;
+      }
+
+    }
+  }
+  
+  .blog {
+    main .wrapper {
+      flex-direction: column;
+    }
+    .aside-container {
+      width: 65%;
+      margin: 40px 0 0 0;
+      align-self: center;
+    }
+    .blog-container {
+      width: 95%;
+      margin-left: 0;
+      margin-top: 2px;
+    }
+  }
+
+  h3 {
+    // margin-left: 30px;
+    font-size: 1.5rem;
+  }
+
+  .aside-img {
+    width: 100%;
+    height: 70%;
+    top: -20px;
+    left: 0;
+  }
+
+  .aside-text {
+    margin: 0 30px;
+    display: flex;
+    .mission,
+    .recent-post {
+      width: calc(50% - 50px);
+    }
+    .mission {
+      margin-right: 50px;
+    }
+    .recent-post {
+      margin-left: 50px;
+    }
+  }
+
+  .destination {
+    bottom: 0;
+    left: 0;
+    border: 4px solid $primary;
+  }
+
+  .comments {
+    margin: 40px 0 0 50px;
+  }
+
   .contact-info .wrapper {
     flex-direction: column;
   }
@@ -20,7 +146,82 @@
   }
 }
 
+
 @media (max-width: 700px) {
+
+  header.index{
+    h1 {
+      font-size: 3.5rem;;
+    }
+  }
+
+  .about {
+    ul {
+      grid-template-columns: 100%;
+      margin-left: 10%;
+    }
+  }
+  .about,
+  .vacations,
+  .trip {
+    h2 {
+      font-size: 1.8rem;
+      line-height: 3.9rem;
+    }
+  }
+
+  .locations,
+  .programs {
+    .img-container,
+    .text-container {
+      width: 90%;
+      margin: 0 30px;
+    }
+  }
+
+  .vacations {
+    padding: 70px 40px;
+  }
+
+  .trip {
+    padding: 70px 0; 
+  }
+
+  .gallery {
+    ul li {
+      width: calc(50% - 20px);
+    }
+    ul li:nth-child(3) {
+      display: none;
+    }
+  }
+
+  .blog .aside-container {
+    display: none;
+  }
+
+  .blog-container {
+    width: 100%;
+    align-self: center;
+  }
+
+  .blog .comments {
+    margin: 40px 0 0 0;
+  }
+
+  .comments-container {
+    padding: 20px;
+  }
+
+  .destination article {
+    padding: 30px;
+  }
+
+  .blog form {
+    margin-left: 0;
+    padding: 10px;
+    width: 100%;
+  }
   
   input[type="text"],
   input[type="email"] {
@@ -33,8 +234,68 @@
   }
 }
 
-  
 @media (max-width: 500px) {
+  header {
+    height: 50vh;
+  }
+  header.index h1,
+  h1 {
+    font-size: 3rem;
+  }
+
+  .about {
+    padding: 50px 0;
+    ul {
+      margin-left: 0;
+    }
+  }
+
+  .vacations, 
+  .banner {
+    display: none;
+  }
+
+  .trip {
+    padding: 30px 0;
+  }
+
+  .gallery {
+    ul li {
+      width: 100%;
+    }
+    ul li:nth-child(1) {
+      display: none;
+    }
+  }
+  .blog header {
+    height: 60vh;;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .destination p{
+    padding-bottom: 15px;
+  }
+
+  .comments-img {
+    display: none;
+  }
+
+  .comments-text {
+    width: 100%;
+    margin-left: 10px;
+  }
 
   .blog,
   .index,
@@ -48,8 +309,33 @@
   }  
   .header-nav {
       visibility: hidden;
-    }
-    .contact form {
-      padding: 30px;
+  }
+  .contact form {
+    padding: 30px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  header.index h1 {
+    font-size: 2.2rem;
+  }
+
+  .about,
+  .trip {
+    h2 {
+      font-size: 1.3rem;
+      line-height: 2rem;
     }
   }
+
+  .about i {
+    width: 35px;
+    height: 35px;
+    font-size: 1.4rem;
+    // display: none;
+  }
+}
