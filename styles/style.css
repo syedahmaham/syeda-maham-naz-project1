@@ -300,8 +300,16 @@ header {
 }
 
 .blog header i,
-.index header i,
 .contact header i {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2rem;
+  visibility: hidden;
+  color: #FFF;
+}
+
+header.index i {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -923,6 +931,10 @@ footer {
   }
 }
 @media (max-width: 700px) {
+  header {
+    height: 60vh;
+  }
+
   header.index h1 {
     font-size: 3.5rem;
   }
@@ -1004,9 +1016,22 @@ input[type=email] {
     height: 50vh;
   }
 
+  .header-nav {
+    visibility: hidden;
+  }
+
   header.index h1,
 h1 {
     font-size: 3rem;
+  }
+
+  header.index i {
+    visibility: visible;
+  }
+
+  .blog header i,
+.contact header i {
+    visibility: visible;
   }
 
   .about {
@@ -1033,7 +1058,7 @@ h1 {
   }
 
   .blog header {
-    height: 60vh;
+    height: 50vh;
   }
 
   h2 {
@@ -1063,18 +1088,8 @@ h1 {
     margin-left: 10px;
   }
 
-  .blog header i,
-.index header i,
-.contact header i {
-    visibility: visible;
-  }
-
   .contact main {
     padding: 50px 0;
-  }
-
-  .header-nav {
-    visibility: hidden;
   }
 
   .contact form {

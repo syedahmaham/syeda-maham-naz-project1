@@ -148,6 +148,9 @@
 
 
 @media (max-width: 700px) {
+  header {
+    height: 60vh;
+  }
 
   header.index{
     h1 {
@@ -235,12 +238,29 @@
 }
 
 @media (max-width: 500px) {
+
   header {
     height: 50vh;
   }
+
+  .header-nav {
+    visibility: hidden;
+  }
+
   header.index h1,
   h1 {
     font-size: 3rem;
+  }
+
+  header.index i {
+    visibility: visible;
+  }
+
+  .blog,
+  .contact {
+    header i {
+      visibility: visible;
+    }
   }
 
   .about {
@@ -268,7 +288,7 @@
     }
   }
   .blog header {
-    height: 60vh;;
+    height: 50vh;
   }
 
   h2 {
@@ -297,19 +317,10 @@
     margin-left: 10px;
   }
 
-  .blog,
-  .index,
-  .contact {
-    header i {
-      visibility: visible;
-    }
-  }
   .contact main {
     padding: 50px 0;
   }  
-  .header-nav {
-      visibility: hidden;
-  }
+  
   .contact form {
     padding: 30px;
   }
