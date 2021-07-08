@@ -16,6 +16,8 @@ header {
     font-size: 2rem;
     visibility: hidden;
     color: #FFF;
+    cursor: pointer;
+    z-index: 999;
   }
 }
 
@@ -27,6 +29,8 @@ header.index {
     font-size: 2rem;
     visibility: hidden;
     color: #FFF;
+    cursor: pointer;
+    z-index: 999;
   }
 }
 
